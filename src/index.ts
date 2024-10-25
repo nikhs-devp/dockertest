@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction, Router } from 'express';
 import apirouter from "./apis/pdf"
 
 export const app = express();
-const PORT = process.env.PORT || 3000 || 3001;
+const PORT = 8080;
 
 // Middleware
 app.use(express.json());
