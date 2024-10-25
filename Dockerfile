@@ -1,5 +1,7 @@
 # Dockerfile
-FROM node:18-alpine
+FROM node:18-slim
+
+RUN apt-get update && apt-get install -y graphicsmagick imagemagick ghostscript
 
 WORKDIR /usr/src/app
 

@@ -7,7 +7,7 @@ exports.app = void 0;
 const express_1 = __importDefault(require("express"));
 const pdf_1 = __importDefault(require("./apis/pdf"));
 exports.app = (0, express_1.default)();
-const PORT = process.env.PORT || 3000;
+const PORT = 8080;
 // Middleware
 exports.app.use(express_1.default.json());
 // Import API Routes
